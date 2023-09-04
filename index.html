@@ -5,11 +5,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Project: Admin Dashboard</title>
         <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <div class="container">
-            <div class="sidebar"></div>
-            <header></header>
+            <div class="sidebar">
+                <h3><span class="material-icons md-36"> dashboard </span>Dashboard</h3>
+                <ul>
+                    <li><span class="material-icons"> home </span>Home</li>
+                    <li><span class="material-icons"> account_circle </span>Profile</li>
+                    <li><span class="material-icons"> chat </span>Messages</li>
+                    <li><span class="material-icons"> history </span>History</li>
+                    <li><span class="material-icons"> task </span>Tasks</li>
+                    <li><span class="material-icons"> groups </span>Communities</li>
+                </ul>
+                <ul>
+                    <li><span class="material-icons"> settings </span>Settings</li>
+                    <li><span class="material-icons"> help </span>Support</li>
+                    <li><span class="material-icons"> privacy_tip </span>Privacy</li>
+                </ul>
+            </div>
+            <header>
+                <div class="top-header">
+                    <label for="search-bar"><span class="material-icons"> search </span></label>
+                    <input type="search" name="search-bar" id="search-bar" />
+                    <div><span class="material-icons"> notifications </span></div>
+                    
+                </div>
+                <div class="bot-header"></div>
+            </header>
             <div class="main-content"></div>
         </div>
     </body>
