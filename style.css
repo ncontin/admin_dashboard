@@ -62,12 +62,6 @@ img {
     color: white;
 }
 
-.main-content {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    background-color: rgba(128, 128, 128, 0.144);
-}
-
 .sidebar {
     display: grid;
     grid-template-rows: auto auto auto 1fr;
@@ -170,4 +164,123 @@ header {
 .greet-name {
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+.main-content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: rgba(128, 128, 128, 0.144);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 420px 1fr;
+    column-gap: 40px;
+    padding: 40px 20px;
+}
+
+.projects {
+    grid-row: 1 /3;
+}
+
+.projects-title,
+.announcements-title,
+.trending-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    height: 40px;
+}
+
+.card-projects {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
+    min-height: calc(100% - 40px);
+    width: 100%;
+}
+
+.card-projects > div {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    border-left: 15px solid orange;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.card-projects div > p:nth-child(1) {
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+.card-projects img {
+    width: 30px;
+}
+
+.cards-icons {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.announcements-wrapper {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 100px 1px 100px 1px 100px;
+    padding: 30px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.announcements-wrapper div {
+    overflow: hidden;
+    width: 300px;
+}
+
+.announcements-wrapper > div > p:nth-child(2) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* start showing ellipsis when 3rd line is reached */
+    overflow: hidden;
+    font-size: 0.8rem;
+}
+
+.announcements-wrapper > div > p:nth-child(1) {
+    font-weight: 700;
+    font-size: 1rem;
+}
+hr {
+    color: black;
+    width: 100%;
+}
+
+.img-trending {
+    max-width: 60px;
+    border-radius: 100%;
+}
+
+.trending-wrapper {
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: calc(100% - 40px);
+    align-items: center;
+    column-gap: 20px;
+}
+
+.trending-wrapper img {
+    grid-column: 1 / 2;
+}
+
+.trending-wrapper p {
+    grid-column: 2 / 3;
+}
+
+.user-name-trending {
+    font-weight: 500;
 }
